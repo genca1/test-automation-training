@@ -23,9 +23,9 @@ public class SignInPage {
     @FindBy(css = "#form > div > div > div:nth-child(3) > div > form > button")
     private WebElement signInButton;
 
-    public void signIn(String email, String password) {
+    public void signIn(String email, String name) {
         signInEmail.sendKeys(email);
-        signInName.sendKeys(password);
+        signInName.sendKeys(name);
         signInButton.click();
     }
 }
