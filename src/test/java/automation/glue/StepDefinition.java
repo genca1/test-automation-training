@@ -1,7 +1,7 @@
 package automation.glue;
 
-import config.AutomationFrameworkConfiguration;
-import drivers.DriverSingleton;
+import automation.config.AutomationFrameworkConfiguration;
+import automation.drivers.DriverSingleton;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import pages.SignInPage;
-import util.ConfigurationProperties;
+import automation.pages.SignInPage;
+import automation.util.ConfigurationProperties;
 
 @CucumberContextConfiguration
 @ContextConfiguration(classes = AutomationFrameworkConfiguration.class)

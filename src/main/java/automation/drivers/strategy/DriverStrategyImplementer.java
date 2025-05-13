@@ -1,4 +1,4 @@
-package drivers.strategy;
+package automation.drivers.strategy;
 
 public class DriverStrategyImplementer {
 

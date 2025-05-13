@@ -1,7 +1,7 @@
-package drivers;
+package automation.drivers;
 
-import drivers.strategy.DriverStrategy;
-import drivers.strategy.DriverStrategyImplementer;
+import automation.drivers.strategy.DriverStrategyImplementer;
+import automation.drivers.strategy.DriverStrategy;
 import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
