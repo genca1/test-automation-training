@@ -29,8 +29,8 @@ public class StepDefinition {
     }
     @Given("^I go to the Website")
     public void i_go_to_the_website() {
-        driver = DriverSingleton.getDriver();
-        driver.get("https://www.automationexercise.com/signup");
+        this.driver = DriverSingleton.getInstance(configurationProperties.getBrowser()).instantiate("CHROME");
+        this.driver.get("https://www.automationexercise.com/signup");
         System.out.println("Navigating to automation practice website..");
     }
 

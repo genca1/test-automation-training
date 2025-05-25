@@ -2,6 +2,7 @@ package automation.drivers.strategy;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Chrome implements DriverStrategy {
@@ -13,6 +14,6 @@ public class Chrome implements DriverStrategy {
         options.addArguments("--no-sandbox");
         options.addArguments("--remote-allow-origins=*");
 
-        return new ChromeDriver();
+        return new ChromeDriver(options);
     }
 }
